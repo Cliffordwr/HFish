@@ -106,8 +106,11 @@ POST：
 - Team: HackLC
 - URL: https://hack.lc
 
-# 反馈群
+# 大屏显示攻击时间bug
+修改static/data/js/data.js
+function formatDate(d) {
+    var datex = new Date(d).toLocaleString();
+    return datex
+}
+即可按照北京时间显示攻击时间
 
-加微信拉人，请备注 **HackLC**
-
-![wechat.png](./images/wechat.jpg)
